@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script>
+	function makeRand(element) {
+		var x = document.body.offsetHeight-element.clientHeight;
+		var y = document.body.offsetWidth-element.clientWidth;
+		var randomX = Math.floor(Math.random()*x);
+		var randomY = Math.floor(Math.random()*y);
+		return [randomX,randomY];
+	}
+	
+		var p = document.getElementsByTagName('p');
+		var xy = makeRand(p);
+		console.log(xy);
+		p.style.top = xy[0] + 'px';
+		p.style.left = xy[1] + 'px';
+	console.log(xy);
+</script>
+<body>
+	<h1>guess the three_word_phrase<br>enter inside the url with a '/':</h1>
+	<h1>┌∩┐(◣_◢)┌∩┐</h1>
+<!-- 	<p>no</p>
+	<p>fux</p>
+	<p>alien</p> -->
+</body>
+</html>
